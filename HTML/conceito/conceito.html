@@ -38,3 +38,60 @@
     tags de auto fechamento, consideramos como elemento vazio, mas 
     ainda sim, um elemento HTML.
 -->
+
+<!--ANINHAMENTO DE TAGS
+    - Fluxo
+    Por padrão, o computador lê o arquivo HTML de cima para baixo, ou seja,
+    uma tag abaixo da outra.
+
+    - Hierarquia
+    
+    - Posicionamento dos elementos
+-->
+
+    <!--HIERARQUIA
+    Se trata do termo "pais e filhos". Quando um tag está dentro de outra tag,
+    comumente se diz que a de dentro é filha da de fora e assim seguem para duas,
+    três... tags.
+
+    No exemplo baixo, as tags <div> e <p> são filhas da tag <html> e a tag
+    <div> é pai da tag <p> por hierarquia.
+    -->
+    <html>
+        <div>
+            <p>
+
+            </p>
+        </div>
+    </html>
+
+
+    <!--POSICIONAMENTO DOS ELEMENTOS    
+    Por padrão, quando uma tag tem mais de um conteúdo dentro dela, um fica ao lado do outro,
+    por mais que se dê uma quebra de linha diretamente no código eles permaneceram alinhados.    
+    Para que possamos dar uma quebra de linha dentro do conteúdo, utilizamos a tag <br>. Ela dará
+    uma quebra no conteúdo.
+    Entretanto, existem tags em que cada nova abertura e fechamento gera uma quebra de linha
+    automaticamente, caso visto no uso da tag <p></p>. Ela é usada para escrita de paragráfo, 
+    ao utilizarmos uma outra tag <p></p> o conteúdo da nova tag aberta terá uma quebra de 
+    linha em relação ao conteúdo anterior.
+        
+        O exemplo abaixo serve para mostrar que mesmo dando uma quebra de linha
+    o que será mostrado para o cliente serão os conteúdos um ao lado do outro.
+    Já os outros dois, nos mostra a particularidade da tag <p> e o uso da tag <br>.
+    -->
+        <p>
+            Esse é um exemplo de como escrever um paragráfo
+            Estamos aprendendo sobre posicionamento
+        </p>
+
+        <p>
+            Esse é um exemplo de como escrever um paragráfo
+            <p>Estamos aprendendo sobre posicionamento</p> 
+        </p>
+
+        <p>
+            Esse é um exemplo de como escrever um paragráfo<br>
+            Estamos aprendendo sobre posicionamento
+        </p>
+
