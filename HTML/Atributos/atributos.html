@@ -1,0 +1,110 @@
+<!-- ATRIBUTOS DAS TAGS
+    - Informações extras ou configurações das tags
+    - Anatomia => <nomedatag nomedoatributo="Conteúdo">
+    - GLOBAIS e PARTICULARES
+    - Booleano
+        Atributo que não precisa de conteúdo, por si só ele 
+        já indica ou faz.
+-->
+
+<!--ATRIBUTOS GLOBAIS MAIS UTILIZADOS-->
+
+    <!-- class 
+    Utilizamos para classificar uma tag e auxiliar no CSS e JS, já
+    que podemos criar vários elementos com uma mesma classe e isso
+    acaba facilitando na hora de estilizar ou dar funcionalidade a ele.
+    -->
+        <!--EXEMPLO-->
+        <div class="carrinho">
+            Ferrari Enzo
+        </div>
+
+        <div class="carrinho">
+            Porsche Caimã
+        </div>
+
+        <div class="carrinho">
+            Lamborghini Gallardo
+        </div>
+    
+    <!--data-*
+    Usado para tanto no auxílio do CSS e JS, mas, é mais comum no JS, pois ele cria uma classe de vários atributos
+    que quero utilizar na tag e permitir assim uma troca de informações entre o HTML e o script.
+    Existem apenas duas maneiras de nomear o data=> data-qualquernome:"" ou data-qualquer-nome:""
+    -->
+        <!--EXEMPLO-->
+        <div class="carrinho" data-meu-carrinho="">
+            conteudo
+        </div>
+
+    <!--hidden
+    Permite que eu suma com o conteúdo que está dentro da tag. Utilizado bastante pelo JS
+    para dar funcionalidade a botões que geram conteúdos ou páginas que se sobrepõe a inicial.
+    Ele é um exemplo de atributo booleano.
+    -->
+        <!--EXEMPLO-->
+        <div class="carrinho">
+            Ferrari Enzo
+        </div>
+
+        <div class="carrinho">
+            Porsche Caimã
+        </div>
+
+        <div class="carrinho" hidden> 
+            Lamborghini Gallardo
+        </div>
+
+    <!--id
+    Utilizada como um identificador da tag, sua principal diferença do atributo "class" está
+    em que o nome atribuído a id não poderá ser repetido novamente na página HTML, caso contrário
+    irá ocasionar erros na identificação da tag e de seu conteúdo pelo CSS e JS.
+    A id pode estar na tag junto com o atributo "class", pois uma serve para identificar e a outra
+    apenas para classificar a tag.-->
+
+        <!--EXEMPLO-->
+        <div class="carrinho" id="kart1">
+            Ferrari Enzo
+        </div>
+
+        <div class="carrinho" id="kart2">
+            Porsche Caimã
+        </div>
+
+        <div class="carrinho" hidden id="kart3"> 
+            Lamborghini Gallardo
+        </div>
+
+    <!--tabindex
+    Usado para ordenar qual tag e seu conteúdo será selecionado quando o usuário faz uso da tecla "tab".
+    Ao clicar, o navegador irá selecionar o conteúdo de acordo com a ordem recebida.-->
+
+        <!--EXEMPLO-->
+        <div class="carrinho" id="kart1" tabindex="3">
+            Ferrari Enzo
+        </div>
+
+        <div class="carrinho" id="kart2" tabindex="1">
+            Porsche Caimã
+        </div>
+
+        <div class="carrinho" hidden id="kart3" tabindex="2"> 
+            Lamborghini Gallardo
+        </div>
+
+    <!--title
+    Serve para apenas dar um título a tag.-->
+        
+        <!--EXEMPLO-->
+        <div class="carrinho" id="kart1" tabindex="3" title="Ferrari Enzo">
+            Ferrari Enzo
+        </div>
+
+        <div class="carrinho" id="kart2" tabindex="1" title="Porsche Caimã">
+            Porsche Caimã
+        </div>
+
+        <div class="carrinho" hidden id="kart3" tabindex="2" title="Lamborghini Gallardo"> 
+            Lamborghini Gallardo
+        </div>
+
