@@ -1,0 +1,85 @@
+<!-- LISTAS
+    - list-element <li></li>
+    - Ordenadas
+    - Não ordenadas
+    - Descritivas
+    - Misturadas (Orden+NãoOrden) 
+
+Para que o conteúdo seja representado como um elemento da lista, precisamos colocar cada elemento dentro
+de uma tag <li>. Colocar o elemento apenas na tag <li> não é uma boa prática, pois o html pode se confundir 
+se houver mais conteúdos usando-a ou ele pode não entender o que se representa, já que ele depende de uma tag 
+pai para fazer sentido. Seja essa tag indicando uma lista ORDENADA<ol>, NÃO ORDENADA<ul> ou um MENU<menu>.
+-->
+
+    <!--ORDENADAS - <ol></ol>(ordered list = Lista de ordem ou ordenada)
+    Para criar uma lista ordenada, basta você colocar os elementos que estão na tag <li> dentro
+    da tag pai <ol></ol>. Utilizamos o atributo type:"" na tag <ol> para definir como será a marcação
+    da nossa ordem, se será numérica(1,2,3...), alfabética(a,b,c) ou romana(I,II,III...)-->
+
+        <h1>Bolo de banana</h1>
+        <h2>Ingredientes</h2>
+        <ol type="I">
+            <li>4 ovos</li>
+            <li>2 xícaras de chá de açúcar</li>
+            <li>4 colheres de sopa de margarina</li>
+            <li>2 xícaras de chá de farinha de trigo</li>
+            <li>1 colher de café de bicarbonato de sódio</li>
+            <li>1 colher de sobremesa de fermento químico em pó</li>
+            <li>4 bananas-prata maduras amassadas com o garfo</li>
+            <li>Açúcar e canela para polvilhar</li>
+        </ol>
+
+
+    <!--NÃO ORDENADAS - <ul></ul>(unordered list = Lista não ordenada)
+    Criamos ela colocando os elementos que estão na tag <li> dentro da tag pai <ul></ul>-->
+        <h1>Bolo de banana</h1>
+            <h2>Ingredientes</h2>
+            <ul>
+                <li>4 ovos</li>
+                <li>2 xícaras de chá de açúcar</li>
+                <li>4 colheres de sopa de margarina</li>
+                <li>2 xícaras de chá de farinha de trigo</li>
+                <li>1 colher de café de bicarbonato de sódio</li>
+                <li>1 colher de sobremesa de fermento químico em pó</li>
+                <li>4 bananas-prata maduras amassadas com o garfo</li>
+                <li>Açúcar e canela para polvilhar</li>
+            </ul>
+
+    <!--DESCRITIVAS - <dl></dl>(description list)
+    A lista descritiva é criada primeiro pela tag pai <dl> e depois dentro dela acrescentamos
+    suas duas tags filhas: <dt></dt> que será usada para informar o elemento e a tag <dd><dd>
+    para descrever o/os elementos, ou seja, para cada elemento <dt> uso a tag <dd> para descrever.
+        <dl>
+            <dt></dt>
+            <dd></dd>
+        </dl>
+    -->
+
+        <dl>
+            <!--Elemento + Descrição-->
+            <h1>O que é?</h1>
+            <dt> Ventilador</dt>
+                <dd> Um ventilador ou ventoinha é um dispositivo
+                    mêcanico que converte energia mecânica em ar.
+                </dd>
+
+            <dt> Liquidificador</dt>
+                <dd> Um aparelho eletrodoméstico utilizado para
+                    triturar ou bater algum alimento
+                </dd>
+        </dl>
+
+
+    <!--MISTURADAS-->
+    
+        <h1>Açúcar</h1>
+        <ol type="a">
+            <!--Uma lista não ordenada dentro de uma ordenada--> 
+                <li>2 xícaras de chá de açúcar
+                    <ul>
+                        <li>Mascavo</li>
+                        <li>Branco</li>
+                        <li>Refinado</li>
+                    </ul>
+                </li>
+        </ol>
